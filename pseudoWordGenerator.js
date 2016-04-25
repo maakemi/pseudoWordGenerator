@@ -1,3 +1,16 @@
+/*!
+ * Library for creating pseudo words with customized length
+ *
+ * Version 1.0
+ *
+ * Copyright 2016, Mariana Shimabukuro
+ * 
+ *
+ * Date: 2016-04-25
+*/
+
+
+
 function getLetter(charset){
     var rand = Math.floor(Math.random()*charset.length);
     return charset[rand];
