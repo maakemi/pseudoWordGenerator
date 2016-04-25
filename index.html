@@ -1,0 +1,24 @@
+<hmtl>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+    <script type="text/javascript" src="pseudoWordGenerator.js"></script>  
+    <button type="button" id="btTest" class="buttons" onclick="main()">Run</button><br>  
+    <div id="panel"> </div>
+    <span id="testArea" style="visibility:hidden;"></span>
+    
+    
+    <script>
+        function main(){
+            var rdnString, rdnTallString, string="";    
+            for (var i=0;i<10;i++){  
+                rdnString = randStr(5, "acenorsuvxzcnrcnraeouaeouaeou", ["sex", "ear", "are"]);
+
+                rdnTallString = randTallStr(8, "aeou", "bdhkhd", "gpqygp", ["sex", "ear"]);    
+
+                //printing the results on the screen using function wordToText wchi returns the object fields in a string
+               string=string+"<BR>"+rdnString+" "+rdnTallString;
+            }
+            $("#panel").html(string);
+
+        }
+    </script>
+</hmtl>
